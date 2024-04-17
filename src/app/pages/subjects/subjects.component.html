@@ -1,0 +1,8 @@
+<input placeholder="Введите текст">
+<span style="margin-left: 1rem">Loading...</span>
+
+<ul>
+  @for (subject of subjects$ | async; track subject) {
+    <li>{{ subject }}</li>
+  }
+</ul>
